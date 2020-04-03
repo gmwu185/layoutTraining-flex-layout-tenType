@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" class="d-flex m-h-100vh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>訂單明細</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="d-flex justifyContent-center alignItems-center bg-white">
+  <!-- .type09-range 與 body.alignItems-center  移除後為滿版 -->
+  <div class="d-flex direction-column border border-second bg-white type09 type09-range">
+    <div class="type09-c-card border border-second text-secondTurbid">
+      <h2 class="type09-c-card__title bg-second text-center fontSize-2xl">訂單摘要</h2>
+      <div class="type09-c-card__body">
+        <!-- 使用 flex 樣式架構： dl, dt, dd -->
+        <dl class="type09-c-dl type09-count">
+          <dt class='type09-c-dl__dt type09-count__title'>小計</dt>
+          <dd class='type09-c-dl__dd type09-count__num'>NT$ 2,700</dd>
+        </dl>
+        <dl class="type09-c-dl type09-count">
+          <dt class='type09-c-dl__dt type09-count__title'>運費</dt>
+          <dd class='type09-c-dl__dd type09-count__num'>NT$ 300</dd>
+        </dl>
+        <dl class="type09-c-dl fontSize-xl fontW-bold type09-total">
+          <dt class='type09-c-dl__dt'>總計</dt>
+          <dd class='type09-c-dl__dd'>NT$ 3,000</dd>
+        </dl>
+        <!-- /使用 flex 樣式架構：dl, dt, dd -->
+        <!-- 不使用 flex 樣式架構：table -->
+        <!-- <table class="type09-c-table type09-count">
+          <tbody>
+            <tr>
+              <td class='type09-c-table__tbody__tr__td'>小計</td>
+              <td class='type09-c-table__tbody__tr__td text-right'>NT$ 2,700</td>
+            </tr>
+            <tr>
+              <td class='type09-c-table__tbody__tr__td'>運費</td>
+              <td class='type09-c-table__tbody__tr__td text-right'>NT$ 300</td>
+            </tr>
+          </tbody>
+          <tfoot  class="fontSize-xl fontW-bold">
+            <tr>
+              <td class='type09-c-table__tfoot__tr'>總計</td>
+              <td class='type09-c-table__tfoot__tr text-right'>NT$ 3,000</td>
+            </tr>       
+          </tfoot>
+        </table> -->
+        <!-- /不使用 flex 樣式架構：table -->
+      </div>
+    </div>
+    <div class="type09-c-card border border-second text-secondTurbid">
+      <h2 class="type09-c-card__title bg-second text-center fontSize-2xl">購物清單</h2>
+      <ul class="type09-c-card__body type09-c-shoppingCart">
+        <li class="type09-c-shoppingCart__item">
+          <img class='type09-c-shoppingCart__item__photo' src="img/type-09/pic.png" alt="甜點圖片一">
+          <div class='lineH-15'>
+            <h3 class="fontSize-m">焦糖馬卡龍 (2)</h3>
+            <p class="fontSize-xl fontW-bold">NT$ 900</p>
+          </div>
+        </li>
+        <li class="type09-c-shoppingCart__item">
+          <img class='type09-c-shoppingCart__item__photo' src="img/type-09/pic.png" alt="甜點圖片二">
+          <div class='lineH-15'>
+            <h3 class="fontSize-m">焦糖馬卡龍 (2)</h3>
+            <p class="fontSize-xl fontW-bold">NT$ 900</p>
+          </div>
+        </li>
+        <li class="type09-c-shoppingCart__item">
+          <img class='type09-c-shoppingCart__item__photo' src="img/type-09/pic.png" alt="甜點圖片三">
+          <div class='lineH-15'>
+            <h3 class="fontSize-m">焦糖馬卡龍  (2)</h3>
+            <p class="fontSize-xl fontW-bold">NT$ 900</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,1167 @@
+
+/*=============================================
+=            color var            =
+=============================================*/
+
+:root{
+  --primary: rgb(55, 82, 61);
+  --second: rgb(231, 238, 234);
+  --secondTurbid: rgb(130, 152, 134); /* 9.訂單明細文字特有色 */
+  --third: rgb(179, 212, 209);
+  --cyan: rgb(172, 210, 254);  /* 6.圖文並排特有色 */
+  --black: #333;
+  --white: #fff;
+  --hexschoolColor: #00cc99;
+}
+
+/*=====  End of color var  ======*/
+
+
+
+
+/*=============================================
+=            base            =
+=============================================*/
+
+*, ::before, ::after {
+	box-sizing: border-box;
+}
+
+body, dl, dt, dd{
+  width: 100%;
+}
+
+body{
+  font-size: 15px;
+  line-height: 1.2;
+  color: var(--black);
+  font-family: '微軟正黑體', 'Microsoft JhengHei', Tahoma, verdana, STHeiti, serif, sans-serif;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+a{
+  color: var(--primary);
+}
+a:hover{
+  color: var(--black);
+}
+
+/*=====  End of base  ======*/
+
+
+
+
+
+/*=============================================
+=            佈局            =
+=============================================*/
+
+.warp{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+}
+
+/*=====  End of 佈局  ======*/
+
+
+
+
+
+
+
+/*=============================================
+=            block            =
+=============================================*/
+
+/* index
+-------------------------------------------------- */
+.indexMainImage--bg{
+  background-image: url('.././img/index/indexMainImage.jpg');
+  background-size: auto 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.indexMainImage-content{
+  margin-top: 11vh;
+}
+.indexMainImage-content__title{
+  font-size: 6vw;
+  margin-bottom: 1.5vh;
+  color: var(--hexschoolColor);
+}
+.indexMainImage-content__subTitle{
+  font-size: 2.5vw;
+}
+.indexMainImage-arr{
+  font-size: 2.5vw;
+  margin-bottom: 5vh;
+  color: var(--white);
+}
+.indexMainImage-arr--hover:hover{
+  color: var(--hexschoolColor);
+}
+.indexMain--bgColor{
+  background-color: #000;
+}
+
+.index-tasks{
+  padding-top: 7vh;
+  padding-bottom: 7vh;
+}
+.index-tasks__title{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.index-complete--bg{
+  background-image: url('.././img/index/complete.png');
+  background-size: auto 110%;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 15vh;
+  padding-bottom: 15vh;
+}
+.index-complete__logo{
+  max-width: 200px;
+}
+
+
+/* 專用格線 */
+.index-g-waterfall {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 3%;
+  padding-right: 3%;
+  column-count: 3;
+  column-gap: 3%;
+}
+.index-g-waterfall__item {
+  padding: 0px 0px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+/* /專用格線 */
+
+
+/* 專用模組 */
+.index-c-opCard{
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  padding: 25px 10px;
+  border: 1px solid var(--hexschoolColor);
+}
+.index-c-opCard:hover{
+  border: 1px solid var(--primary);
+  background-color: var(--primary);
+  opacity: 1;
+}
+.index-c-opCard a{
+  text-decoration: none;
+  cursor: pointer;
+}
+.index-c-opCard__title{
+  padding-top: 5px;
+  padding: 5px;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.2;
+  color: var(--hexschoolColor);
+}
+.index-c-opCard:hover .index-c-opCard__title{
+  color: var(--white);
+  opacity: 1;
+}
+.index-c-opCard__cover{
+  /* filter: opacity(0.2);
+  transition: 1s filter; */
+  border: 1px solid var(--hexschoolColor);
+  padding: 3px;
+  margin-bottom: 15px;
+}
+.index-c-opCard:hover .index-c-opCard__cover {
+  /* filter: opacity(1);
+  transition: filter 1s; */
+  opacity: 1;
+  transition: opacity 1s;
+}
+.index-c-opCard__cover__img{
+  opacity: 0;
+  transition: opacity 1s;
+  vertical-align: bottom;
+  width: 100%;
+}
+.index-c-opCard:hover .index-c-opCard__cover__img{
+  opacity: 1;
+  transition: opacity 1s;
+}
+.index-c-opCard__opBtn{
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  margin: 0px;
+  padding: 15px 5px;
+  cursor: pointer;
+  font-size: 28px;
+  font-weight: bold;
+  border: none;
+  background-color: transparent;
+  color: transparent;
+  border: 1px solid var(--hexschoolColor);
+}
+.index-c-opCard:hover .index-c-opCard__opBtn{
+  color: var(--white);
+  border: 1px solid var(--hexschoolColor);
+  background-color: var(--hexschoolColor);
+}
+.index-c-opCard__info{
+  color: var(--white);
+  opacity: 0;
+}
+.index-c-opCard:hover .index-c-opCard__info{
+  opacity: 1;
+}
+/* /專用模組 */
+
+
+
+
+
+/* End of index
+-------------------------------------------------- */
+
+/* type01
+-------------------------------------------------- */
+.type01{
+  height: 100%;
+}
+.type01-range{
+  max-width: 1188px;
+  max-height: 539px;
+}
+/* block */
+.type01__title{
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.type01__subTitle{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.type01__content{
+  padding-left: 30px;
+  padding-right: 30px;
+}
+/* block */
+/* grid */
+.type01-g-container{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.type01-g-container__row{
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.type01-g-container__row__col{
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-bottom: 75px;
+}
+/* /grid */
+/* End of type01
+-------------------------------------------------- */
+
+/* type02
+-------------------------------------------------- */
+.type02{
+  width: 100%;
+  height: 100%;
+}
+.type02-range{
+  max-width: 1138px;
+  max-height: 822px;
+}
+/* type02 專屬元綿 */
+.type02-c-alignCenterCard{
+  display: flex;
+}
+.type02-c-alignCenterCard__item{
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  margin: 8px;
+  padding: 35px;
+}
+/* /type02 專屬元綿 */
+/* End of type02
+-------------------------------------------------- */
+
+/* type03
+-------------------------------------------------- */
+.type03{
+  margin: 5px;
+}
+.type03-range{
+  max-width: 1100px; 
+  max-height: 828px;
+}
+/* block */
+.type03__content{
+  padding: 80px 86px;
+}
+.type03__content__title{
+  margin-bottom: 32px;
+}
+.type03__content__string{
+  margin-bottom: 26px;
+}
+/* /block */
+/* type03 專屬元綿 */
+.type03-c-columnNav{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 326px;
+  padding: 70px 12px;
+}
+.type03-c-columnNav__link{
+  margin-bottom: 22px;
+}
+.type03-c-columnNav__menu__item{
+  margin-bottom: 30px;
+}
+.type03-c-photoList{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -3px;
+  margin-right: -3px;
+}
+.type03-c-photoList__item{
+  padding: 0px 3px;
+  margin-bottom: 3px;
+  width: 33.333%;
+}
+/* /type03 專屬元綿 */
+/* End of type03
+-------------------------------------------------- */
+
+/* type04
+-------------------------------------------------- */
+.type04{
+  width: 100%;
+  overflow: hidden;
+}
+.type04-range{
+  max-width: 1278px;
+  min-height: 877px; 
+}
+/* type04 屬專元件 */
+.type04-c-betweenNav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 36px;
+}
+.type04-c-betweenNav__menu{
+  display: flex;
+}
+.type04-c-betweenNav__menu__item{
+  padding-right: 15px;
+}
+.type04-c-paper{
+  padding: 20px 0;
+  max-width: 600px;
+}
+.type04-c-paper__title{
+  margin-bottom: 20px;
+}
+.type04-c-paper__string{
+  margin-bottom: 18px;
+}
+.type04-c-paper__pic{
+  margin-bottom: 18px;
+}
+.type04-c-centerNav{
+  display: flex;
+  justify-content: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.type04-c-centerNav__meun{
+  display: flex;
+}
+.type04-c-centerNav__meun__item{
+  padding-left: 7px;
+  padding-right: 7px;
+}
+/* type04 屬專元件 */
+/* End of type04
+-------------------------------------------------- */
+
+/* type05
+-------------------------------------------------- */
+.type05{
+  width: 100%;
+  height: 100%;
+}
+.type05-range{
+  width: 1286px;
+  height: 814px;
+  padding: 5px 3px;
+}
+/* type05 專屬元件 */
+/* 第一列 */
+.type05-c-flexAlignLeft{
+  display: flex;
+  padding-left: 22px;
+}
+.type05-c-flexAlignLeft__item{
+  display: flex;
+  padding-top: 15px;
+  padding-right: 40px;
+  padding-bottom: 28px;
+}
+.type05-c-flexAlignLeft__item__img{
+  width: 55px;
+  height: 55PX;
+  margin-right: 10px;
+}
+.type05-c-flexAlignLeft__item__content__title{
+  margin-top: 12px;
+  margin-bottom: 17px;
+}
+/* /第一列 */
+/* 第二列 */
+.type05-c-flexAlignCenter{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+  padding-bottom: 26px;
+}
+.type05-c-flexAlignCenter__item{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.type05-c-flexAlignCenter__item__img{
+  margin-bottom: 4px;
+}
+.type05-c-flexAlignCenter__item__content__title{
+  margin-bottom: 18px;
+}
+/* /第二列 */
+/* 第三列 */
+.type05-c-flexAlignJustify{
+  display: flex;
+  flex-direction: column;
+  padding: 18px 18px;
+}
+.type05-c-flexAlignJustify__item{
+  display: flex;
+  align-items: center;
+}
+.type05-c-flexAlignJustify__item__img{
+  padding: 6px;
+}
+.type05-c-flexAlignJustify__item__content__title{
+  margin-bottom: 16px;
+}
+.type05-c-flexAlignJustify__item--alignRight{
+  justify-content: flex-end;
+}
+.type05-c-flexAlignJustify__item--alignRight .type05-c-flexAlignJustify__item__img{
+  -ms-flex-order: 2;
+  order: 2;
+}
+.type05-c-flexAlignJustify__item--alignRight .type05-c-flexAlignJustify__item__content{
+  -ms-flex-order: 1;
+  order: 1;
+}
+/* /第三列 */
+/* /type05 專屬元件 */
+/* End of type05
+-------------------------------------------------- */
+
+/* type06
+-------------------------------------------------- */
+.type06{
+  width: 100%;
+}
+.type06-range{
+  max-width: 907px;
+  min-height: 500px;
+}
+/* type06 專屬元件 */
+.type06-c-card{
+  margin: 14px 13px;
+}
+.type06-c-card__head{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 2px;
+}
+.type06-c-card__body{
+  display: flex;
+  padding: 30px 64px 30px 64px;
+}
+.type06-c-card__body__pic{
+  min-width: 176px;
+  height: auto;
+  margin-right: 60px;
+}
+.type06-c-card__body__contet{
+  display: flex;
+  flex-direction: column;
+}
+.type06-c-card__body__contet__title{
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.type06-c-card__body__contet__string{
+  padding-bottom: 10px;
+}
+.type06-c-card-shareLinks{
+  margin: 5px;
+}
+.type06-c-card-shareLinks__item{
+  margin-right: 10px;
+}
+/* /type06 專屬元件 */
+/* End of type06
+-------------------------------------------------- */
+
+/* type07
+-------------------------------------------------- */
+.type07{
+  width: 100%;
+  overflow: hidden;
+}
+.type07-range{
+  max-width: 1146px;
+  min-height: 883px; 
+}
+/* type07 專屬元件 */
+.type07-c-head{
+  padding: 20px 0;
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
+.type07-c-head__pic{
+  margin-bottom: 30px;
+}
+.type07-c-head__title{
+  margin-bottom: 20px;
+}
+
+.type07-c-footerNav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 50px;
+}
+.type07-c-footerNav__menu{
+  display: flex;
+  justify-content: space-around;
+}
+.type07-c-footerNav__menu__item{
+  padding: 0px 10px;
+}
+/* /type07 專屬元件 */
+/* End of type07
+-------------------------------------------------- */
+
+/* type08
+-------------------------------------------------- */
+.type08-range{
+  width: 856px;
+  height: 470px;
+}
+.type08-title{
+  padding-left: 55px;
+  padding-right: 55px;
+}
+/* End of type08
+-------------------------------------------------- */
+
+/* type09
+-------------------------------------------------- */
+.type09{
+  max-width: 309px;
+  width: 100%;
+}
+.type09-range{
+  max-width: 309px;
+  max-height: 568px;
+  padding-bottom: 6px;
+}
+/* type09 專屬元件 */
+.type09-c-card{
+  margin: 6px;
+  margin-bottom: 0;
+}
+.type09-c-card__title{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.type09-c-card__body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 13px 15px;
+}
+.type09-c-card + .type09-c-card{
+  margin-top: 15px;
+}
+
+.type09-c-dl{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.type09-c-dl__dd{
+  text-align: right;
+}
+.type09-c-dl__dt, .type09-c-dl__dd{
+  width: 50%;
+}
+
+.type09-c-table{
+  width: 100%;
+}
+.type09-c-table__tbody__tr__td{
+  padding: 5px 0px;
+}
+.type09-c-table__tfoot__tr{
+  padding-top: 15px;
+}
+
+.type09-c-shoppingCart__item{
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.type09-c-shoppingCart__item + .type09-c-shoppingCart__item{
+  margin-top: 15px;
+}
+.type09-c-shoppingCart__item__photo {
+  min-width: 118px;
+  margin-right: 15px;
+}
+/* type09 專屬元件 */
+/* type09 block */
+.type09-count__title, .type09-count__num{
+  padding: 5px 0px;
+}
+.type09-total{
+  padding-top: 15px;
+}
+/* /type09 block */
+/* End of type09
+-------------------------------------------------- */
+
+/* type10
+-------------------------------------------------- */
+.type10{
+  width: 100%;
+  height: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.type10-range{
+  max-width: 948px;
+  min-height: 951px;
+  padding: 3px;
+}
+/* block */
+.type10-nav{
+  max-width: 300px;
+  width: 100%;
+  margin-right: 20px;
+}
+.type10-nav__item{
+  padding: 20px;
+}
+.type10-pdList__item{
+  max-width: 300px;
+  width: 100%;
+}
+.type10-pdInfo__title{
+  width: 80%;
+}
+.type10-pdInfo__price{
+  max-width: 115px;
+  padding: 15px 18px;
+}
+.type10-pdAddCardBtn{
+  padding: 30px;
+}
+/* /block */
+/* grid */
+.type10-g-container{
+  padding: 0 20px;
+  /*
+    * 主要針對 body 下安全間距，其本上 5px 以上，視窗不會在溢位感應出現水平捲軸。
+  */
+}
+.type10-g-container__row{
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -30px;
+  margin-left: -30px;
+  margin-bottom: -15px;
+  overflow: hidden;
+  /*
+    ! 注意事項：
+    * 不能帶寬度的數值，除非動態計算，如使用百分比取自 .container 數值計算。
+  */
+  /*
+    ? .container__row 負 margin 基本計算公式：
+    ! 特別注意到計算最後要透過 '-()' 轉為負數值。
+    * -(.row 的 margin-right) = (.col 層 margin-right + .col 層 margin-left) + (.row 層 margin-right)
+    * -(.row 的 margin-left) = (.col 層 margin-right + .col 層 margin-left) + (.row 層 margin-left)
+  */
+  /*
+    ? .container__row 負 margin-x 溢位出現水平捲軸安全邊處理-說明：
+    .container 需將 .container__row 加回去，處理過 .container__row 層 margin-right & margin-left 所得負數值後，在容器外方會因為 .container 所包子層 .container__row 出現水平捲軸，需透過 padding-lert & padding-right 的數值處理 .rwo 的負數值。
+
+    ? .container__row 負 margin-x 溢位出現水平捲軸安全邊處理-計算公式： 
+    ! 特別注意到計算最後要透過 '+()' 轉為正數值。
+    * +(.container 的 padding-right 數值) = (.col 層 margin-right + .col 層 margin-left) + (.row 層 margin-right)
+    * +(.container 的 padding-lert 數值) = (.col 層 margin-right + .col 層 margin-left) + (.row 層 margin-lert)
+  */
+}
+.type10-g-container__row__col{
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /*
+    ? (.col 正 margin ) 與 (.container 溢位出現水平捲軸安全邊處理) 與 (.container__row 負 margin) 的計算公式： 
+    ! 需配合 .row 層 (也就是 .col 的父層) 的負數值為基本基數計算，.col 正值多少都需要加到 .row 層負值去。
+    ! 特別注意到計算最後要透過 '-()' 轉為負數值。
+    * -(.container__row 的 margin-right) = ( (.col 的 margin-right 正數值) + (.col 的 margin-lert 正數值) ) + (.container 的 padding-right 數值)
+    * -(.container__row 的 margin-lert) = ( (.col 的 margin-right 正數值) + (.col 的 margin-lert 正數值) )  + (.container 的 padding-lert 數值)
+  */
+  /*
+    * 計算例子一：
+    * -(.container__row 的 margin-right: 40px) = (.col 的 margin-right: 10px + margin-left: 10px) + (.container 的 padding-right: 20px)
+    ** .container__row__col 的 margin-right: 數值 10px
+    ** .container__row 的 margin-right: 數值 -40px
+    ** .container 的 margin-right: 數值 20px
+  */
+  /*
+    * 計算例子二：
+    * -(.container__row 的 margin-right: 60px) = (.col 的 margin-right: 20px + margin-left: 20px) + (.container 的 padding-right: 40px)
+    ** .container__row__col 的 margin-right: 數值 20px
+    ** .container__row 的 margin-right: 數值 -60px
+    ** .container 的 margin-right: 數值 40px
+  */
+}
+/* /grid */
+/* 專屬元件 */
+.type10-c-flexTable-x{
+  display: flex;
+}
+.type10-c-flexTable-x__item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+}
+.type10-c-flexTable-x__item__inner{
+  align-self: center;
+}
+/* 專屬元件 */
+/* End of type10
+-------------------------------------------------- */
+
+/*=====  End of block  ======*/
+
+
+
+
+
+
+/*=============================================
+=            content            =
+=============================================*/
+
+/* typography
+-------------------------------------------------- */
+/* 
+  ! 因 CSS @import 渲染使用較慢註解不用，使用 head link 引入字型。
+*/
+/* @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap'); */
+.ff-montserrat{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.fontSize-s{
+  font-size: 12px;
+}
+.font-base{
+  font-size: 15px;
+}
+.fontSize-m{
+  font-size: 16px;
+}
+.fontSize-l{
+  font-size: 18px;
+}
+.fontSize-xl{
+  font-size: 21px;
+}
+.fontSize-2xl{
+  font-size: 24px;
+}
+.fontSize-3xl{
+  font-size: 28px;
+}
+.fontSize-4xl{
+  font-size: 86px;
+}
+
+.fontW-bold{
+  font-weight: bold;
+}
+.fontW-500{
+  font-weight: 500;
+}
+.fontW-400{
+  font-weight: 400;
+}
+.fontW-300{
+  font-weight: 300;
+}
+
+.lineH-13{
+  line-height: 1.3;
+}
+.lineH-14{
+  line-height: 1.4;
+}
+.lineH-15{
+  line-height: 1.5;
+}
+.lineH-17{
+  line-height: 1.7;
+}
+.lineH-20{
+  line-height: 2;
+}
+/* End of typography
+-------------------------------------------------- */
+
+/* images
+-------------------------------------------------- */
+.img-maxWautoH {
+  max-width: 100%;
+  height: auto;
+}
+.img-Wfull{
+  width: 100%;
+  height: auto;
+}
+/* End of images
+-------------------------------------------------- */
+
+/*=====  End of content  ======*/
+
+
+
+
+
+
+
+/*=============================================
+=            utilities            =
+=============================================*/
+
+/* Link
+-------------------------------------------------- */
+
+.noDecoration, .noDecoration{
+  text-decoration: none;
+}
+.noDecoration:hover{
+  text-decoration: underline;
+}
+
+/* End of Link
+-------------------------------------------------- */
+
+/* color
+-------------------------------------------------- */
+.bg-primary{
+  background-color: var(--primary);
+}
+.bg-second{
+  background-color: var(--second);
+}
+.bg-third{
+  background-color: var(--third);
+}
+.bg-cyan{
+  background-color: var(--cyan);
+}
+.bg-white{
+  background-color: var(--white);
+}
+.bg-black{
+  background-color: var(--black);
+}
+/* End of color
+-------------------------------------------------- */
+
+/* text
+-------------------------------------------------- */
+a.text-primary, .text-primary{
+  color: var(--primary);
+}
+a.text-second, .text-second{
+  color: var(--second);
+}
+a.text-white, .text-white{
+  color: var(--white);
+}
+a.text-secondTurbid, .text-secondTurbid{
+  color: var(--secondTurbid);
+}
+a.text-center, .text-center{
+	text-align: center;
+}
+
+.text-right{
+	text-align: right;
+}
+.text-left{
+	text-align: left;
+}
+.whiteSpace-nowrap{
+  white-space: nowrap; 
+  /* 空格處理不字串不斷行 */
+}
+/* End of text
+-------------------------------------------------- */
+
+
+/* display
+-------------------------------------------------- */
+.d-inlineBlock{
+  display: inline-block;
+}
+.d-block{
+  display: block;
+}
+/* End of display
+-------------------------------------------------- */
+
+
+/* flex
+-------------------------------------------------- */
+.d-flex{
+	display: flex;
+}
+/* flex-direction */
+.direction-row {
+  flex-direction: row;
+}
+.direction-rowReverse {
+  flex-direction: row-reverse;
+}
+.direction-column {
+  flex-direction: column;
+}
+.direction-columnReverse {
+  flex-direction: column-reverse;
+}
+/* /flex-direction */
+/* justify-content */
+.justifyContent-flexStart {
+  justify-content: flex-start;
+}
+.justifyContent-center {
+  justify-content: center;
+}
+.justifyContent-flexEnd {
+  justify-content: flex-end;
+}
+.justifyContent-spaceAround {
+  justify-content: space-around;
+}
+.justifyContent-spaceBetween {
+  justify-content: space-between;
+}
+.justifyContent-spaceEvenly {
+  justify-content: space-evenly;
+}
+/* /justify-content */
+/* align-items */
+.alignItems-flexStart{
+	align-items: flex-start;
+}
+.alignItems-flexEnd{
+	align-items: flex-end;
+}
+.alignItems-center{
+	align-items: center;
+}
+.alignItems-stretch{
+	align-items: stretch;
+}
+/* /align-items */
+/* flexWrap */
+.flexWrap-nowrap {
+  flex-wrap: nowrap;
+}
+.flexWrap-wrap {
+  flex-wrap: wrap;
+}
+/* /flexWrap */
+/* alignSelf */
+.alignSelf-baseline{
+  align-self: baseline;
+}
+.alignSelf-center{
+  align-self: center;
+}
+/* /alignSelf */
+/* order */
+.order-1 {
+  -ms-flex-order: 1;
+  order: 1;
+}
+.order-2 {
+  -ms-flex-order: 2;
+  order: 2;
+}
+/* /order */
+/* End of flex
+-------------------------------------------------- */
+
+/* size
+-------------------------------------------------- */
+.m-h-100vh{
+  min-height: 100vh;
+}
+.w-100p{
+  width: 100%;
+}
+/* End of size
+-------------------------------------------------- */
+
+/* spacing
+-------------------------------------------------- */
+.mb-30{
+  margin-bottom: 30px;
+}
+.m-auto{
+  margin: auto;
+}
+.mb-auto{
+  margin-bottom: auto;
+}
+.mt-auto{
+  margin-top: auto;
+}
+.my-auto{
+  margin-bottom: auto;
+  margin-top: auto;
+}
+.mx-auto{
+  margin-left: auto;
+  margin-right: auto;
+}
+/* End of spacing
+-------------------------------------------------- */
+
+/* border
+-------------------------------------------------- */
+/* 結構 */
+.border{
+  border: 1px solid;
+}
+.border-left{
+  border-left-width: 1px;
+  border-left-style: solid;
+}
+.border-right{
+  border-right-: 1px;
+  border-right-style: solid;
+}
+.border-top{
+  border-top-width: 1px;
+  border-top-style: solid;
+}
+.border-bottom{
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+/* /結構 */
+/* 樣式 */
+.border-primary{
+  border-color: var(--primary);
+}
+.border-second{
+  border-color: var(--second);
+}
+.border-secondTurbid{
+  border-color: var(--secondTurbid);
+}
+.border-white{
+  border-color: var(--white);
+}
+/* 樣式 */
+/* 圓角 */
+.radiusCircle-5{
+  border-radius: 5px;
+}
+.radiusCircle-topLeft-5{
+  border-top-left-radius: 5px;
+}
+.radiusCircle-topRight-5{
+  border-top-right-radius: 5px;
+}
+.radiusCircle-15{
+  border-radius: 15px;
+}
+/* /圓角 */
+/* End of border
+-------------------------------------------------- */
+
+/* shadow
+-------------------------------------------------- */
+.shadow{
+  box-shadow: 0 5px 5px rgba(0,0,0,.2);
+}
+/* End of shadow
+-------------------------------------------------- */
+
+/* vertical-align
+-------------------------------------------------- */
+.verticalAlign-middle{
+  vertical-align: middle;
+}
+/* End of vertical-align
+-------------------------------------------------- */
+
+/*=====  End of utilities  ======*/
