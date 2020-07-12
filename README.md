@@ -3,7 +3,7 @@
 - [主視覺列表頁設計頁面](https://gmwu185.github.io/layoutTraining-flex-layout-tenType/)
   - [並排卡片](https://gmwu185.github.io/layoutTraining-flex-layout-tenType/type-01.html)
   - [雙欄排版](https://gmwu185.github.io/layoutTraining-flex-layout-tenType/type-02.html)
-  - [雙欄選單設計](https://gmwu185.github.io/layoutTraining-flex-layout-tenType/type-03.html)
+  - [雙欄選單設計](https://gmwu185.github.io/layoutTraining-flex-layout-tenType/type-03.html)
   - [表頭表尾設計](https://gmwu185.github.io/layoutTraining-flex-layout-tenType/type-04.html)
   - [常見三種排版](https://gmwu185.github.io/layoutTraining-flex-layout-tenType/type-05.html)
   - [圖文並排](https://gmwu185.github.io/layoutTraining-flex-layout-tenType/type-06.html)
